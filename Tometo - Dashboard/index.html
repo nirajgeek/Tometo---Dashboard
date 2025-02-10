@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/fevicon.png" />
+    <link rel="preload" href="assets/font/Satoshi-Bold.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="assets/font/Satoshi-Medium.woff2" as="font" type="font/woff2" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Tomoto - Dashboard</title>
+</head>
+
+<body>
+    <!-- Sidebar Start -->
+    <header class="theme_header">
+        <button type="button" class="menu_toggle" aria-label="Menu Toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header_sidebar">
+            <h1 class="theme_logo">
+                <a href="index.html" title="Tomoto.ai" class="custom_logo_link">
+                    <img width="170" height="30" src="assets/images/site_logo.svg" alt="Tomoto.ai" class="for_des" />
+                    <img width="130" height="23" src="assets/images/site_logo_dark.svg" alt="Tomoto.ai"
+                        class="for_mob" />
+                </a>
+            </h1>
+            <div class="sidebar_menu" data-simplebar>
+                <div class="sidebar_menu_inr">
+                    <div class="sidebar_main_menu">
+                        <ul>
+                            <li class="menu_active">
+                                <a href="javascript:void();" title="Dashboard"><span class="icon"><iconify-icon
+                                            class="iconify"
+                                            icon="material-symbols:dashboard"></iconify-icon></span>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();" title="Profile"><span class="icon"><iconify-icon
+                                            class="iconify"
+                                            icon="iconamoon:profile-circle-fill"></iconify-icon></span>Profile</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();" title="Managers">
+                                    <span class="icon">
+                                        <iconify-icon class="iconify" icon="fa-solid:user-tie"></iconify-icon></span>
+                                    Managers</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();" title="Agents">
+                                    <span class="icon">
+                                        <iconify-icon icon="mdi:users"></iconify-icon></span>
+                                    Agents</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();" title="Licenses">
+                                    <span class="icon">
+                                        <iconify-icon class="iconify"
+                                            icon="pajamas:partner-verified"></iconify-icon></span>
+                                    Licenses</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();" title="Accounts">
+                                    <span class="icon">
+                                        <iconify-icon class="iconify"
+                                            icon="tdesign:user-avatar-filled"></iconify-icon></span>
+                                    Accounts</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();" title="Billing">
+                                    <span class="icon">
+                                        <iconify-icon class="iconify"
+                                            icon="streamline:credit-card-1-solid"></iconify-icon></span>
+                                    Billing</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();" title="Logs">
+                                    <span class="icon">
+                                        <iconify-icon class="iconify" icon="ep:list"></iconify-icon></span>
+                                    Logs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_footer for_des">
+                <div class="sidebar_bottom_link">
+                    <a href="javascript:void();" title="Log Out">
+                        <span class="icon">
+                            <iconify-icon class="iconify" icon="material-symbols:logout"></iconify-icon></span>
+                        Log Out
+                    </a>
+                </div>
+                <div class="copyright">
+                    <ul>
+                        <li><a href="javascript:void();" title="Privacy">Privacy</a></li>
+                        <li><a href="javascript:void();" title="Terms">Terms</a></li>
+                        <li><a href="javascript:void();" title="Ethics">Ethics</a></li>
+                        <li><a href="javascript:void();" title="Support">Support</a></li>
+                    </ul>
+                    <div class="copyright_bottom_text">
+                        <p>&copy; Copyrights 2024. Tomato.ai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Sidebar End -->
+
+    <!-- Main Dashboard Start -->
+    <main>
+        <div class="dashboard_content_wp">
+            <div class="header_dashboard_right for_des">
+                <div class="user_info">
+                    <div class="user_notification">
+                        <div class="bell_icon">
+                            <button type="button" aria-label="Notification" class="bell_btn">
+                                <iconify-icon icon="zondicons:notification"></iconify-icon>
+                                <span class="bell_notification_count">3</span>
+                            </button>
+                        </div>
+                        <div class="user_info_name">
+                            <span class="user_info_name_text">John Anders</span>
+                            <a href="javascript:void();" title="Admin">Admin</a>
+                        </div>
+                    </div>
+                    <div class="user_info_img">
+                        <ul>
+                            <li>
+                                <button type="button" aria-label="John Anders">
+                                    <img src="assets/images/john_anders.jpg" alt="Jhon Anders" width="46" height="46" />
+                                </button>
+                                <ul class="user_sub_menu">
+                                    <li>
+                                        <a href="javascript:void();" title="My Dashboard">
+                                            <iconify-icon class="iconify"
+                                                icon="material-symbols:dashboard"></iconify-icon>My Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();" title="My Inbox"><iconify-icon
+                                                icon="line-md:email-filled"></iconify-icon>My
+                                            Inbox</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();" title="Account Setting"><iconify-icon
+                                                icon="ic:round-account-box"></iconify-icon>Account Setting</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void();" title="Log Out"><iconify-icon class="iconify"
+                                                icon="material-symbols:logout"></iconify-icon>Log
+                                            Out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_content">
+                <div class="dashboard_tab_content" id="UserLicenses" style="display: block;">
+                    <div class="header_dashboard_left">
+                        <div class="header_dashboard_left_text">
+                            <h3 class="h3_title">Licenses</h3>
+                        </div>
+                        <div class="header_dashboard_left_btn">
+                            <button type="button" aria-label="Add" class="theme_btn theme_primary_btn">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table_box">
+                        <div class="table_data">
+                            <div class="common_box">
+                                <div class="table_data_row">
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">License Name</span>
+                                                <h6 class="md_text">Accent Softening License 1</h6>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">License Key</span>
+                                                <p>XYZGE23233233
+                                                    <button type="button" aria-label="Copy" class="copy_btn">
+                                                        <span class="icon"><iconify-icon
+                                                                icon="tabler:copy"></iconify-icon></span>
+                                                    </button>
+                                                </p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                                <p data-short="AS">Accent Softening</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Upgrade</span>
+                                                <button type="button" aria-label="Add Seats"
+                                                    class="theme_btn theme_btn_2">
+                                                    Add Seats
+                                                </button>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Actions</span>
+                                                <ul class="actions_list">
+                                                    <li class="play_btn_wp">
+                                                        <button type="button" aria-label="Pause" class="play_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="gridicons:play"></iconify-icon></span></button>
+                                                    </li>
+                                                    <li class="repeat_btn_wp">
+                                                        <button type="button" aria-label="Repeat"
+                                                            class="repeat_btn"><span class="icon"><iconify-icon
+                                                                    icon="fa6-solid:repeat"></iconify-icon></span></button>
+                                                    </li>
+                                                    <li class="edit_btn_wp">
+                                                        <button type="button" aria-label="Edit" class="edit_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="material-symbols:edit"></iconify-icon></span></button>
+                                                    </li>
+                                                    <li class="delete_btn_wp">
+                                                        <button type="button" aria-label="Edit" class="delete_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="material-symbols:delete"></iconify-icon></span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description for_des">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Billing Period</span>
+                                                <p>Trial Period</p>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_mob">
+                                                <span class="sm_text">License Key</span>
+                                                <p>XYZGE23233233
+                                                    <button type="button" aria-label="Copy" class="copy_btn">
+                                                        <span class="icon"><iconify-icon
+                                                                icon="tabler:copy"></iconify-icon></span>
+                                                    </button>
+                                                </p>
+                                            </div>
+                                            <div class="table_data_row_col for_mob">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                                <p data-short="AS">Accent Softening</p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">Trial Expiration Date</span>
+                                                <p>Feb 12 2024</p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <div class="table_data_row_col_inr_flx">
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <span class="sm_text">Seats</span>
+                                                        <p>5</p>
+                                                    </div>
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <span class="sm_text">Instals <span class="icon"><iconify-icon
+                                                                    icon="mingcute:question-fill" data-toggle="tooltip"
+                                                                    data-placement="top"
+                                                                    title="Instals"></iconify-icon></span></span>
+                                                        <p>5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Total Cost<span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Total Cost"></iconify-icon></span></span>
+                                                <p>$0.00</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Cost per Seat</span>
+                                                <p>$0.00/Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr for_mob">
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Trial Expiration Date</span>
+                                                <p>Feb 12 2024</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Seats</span>
+                                                <p>5</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Instals <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span>
+                                                <p>5</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Actives <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span>
+                                                <p>3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="common_box">
+                                <div class="table_data_row">
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">License Name</span>
+                                                <h6 class="md_text">Accent Softening License 2</h6>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">License Key</span>
+                                                <p>XYZGE23233233
+                                                    <button type="button" aria-label="Copy" class="copy_btn">
+                                                        <span class="icon"><iconify-icon
+                                                                icon="tabler:copy"></iconify-icon></span>
+                                                    </button>
+                                                </p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                                <p data-short="AS">Accent Softening</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Upgrade</span>
+                                                <button type="button" aria-label="Add Seats"
+                                                    class="theme_btn theme_btn_2">
+                                                    Add Seats
+                                                </button>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Actions</span>
+                                                <ul class="actions_list">
+                                                    <li class="play_btn_wp">
+                                                        <button type="button" aria-label="Pause" class="play_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="gridicons:play"></iconify-icon></span></button>
+                                                    </li>
+                                                    <li class="repeat_btn_wp">
+                                                        <button type="button" aria-label="Repeat"
+                                                            class="repeat_btn"><span class="icon"><iconify-icon
+                                                                    icon="fa6-solid:repeat"></iconify-icon></span></button>
+                                                    </li>
+                                                    <li class="edit_btn_wp">
+                                                        <button type="button" aria-label="Edit" class="edit_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="material-symbols:edit"></iconify-icon></span></button>
+                                                    </li>
+                                                    <li class="delete_btn_wp">
+                                                        <button type="button" aria-label="Edit" class="delete_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="material-symbols:delete"></iconify-icon></span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description for_des">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Billing Period</span>
+                                                <p>Monthly</p>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_mob">
+                                                <span class="sm_text">License Key</span>
+                                                <p>XYZGE23233233
+                                                    <button type="button" aria-label="Copy" class="copy_btn">
+                                                        <span class="icon"><iconify-icon
+                                                                icon="tabler:copy"></iconify-icon></span>
+                                                    </button>
+                                                </p>
+                                            </div>
+                                            <div class="table_data_row_col for_mob">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                                <p data-short="AS">Accent Softening</p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">Auto-Renewal Date</span>
+                                                <p>March 1 2024</p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <div class="table_data_row_col_inr_flx">
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <span class="sm_text">Seats</span>
+                                                        <p>5</p>
+                                                    </div>
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <span class="sm_text">Instals <span class="icon"><iconify-icon
+                                                                    icon="mingcute:question-fill" data-toggle="tooltip"
+                                                                    data-placement="top"
+                                                                    title="Instals"></iconify-icon></span></span>
+                                                        <p>5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Total Cost<span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Total Cost"></iconify-icon></span></span>
+                                                <p>$300.00</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Cost per Seat</span>
+                                                <p>$60.00/Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr for_mob">
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Auto-Renewal Date</span>
+                                                <p>March 1 2024</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Seats</span>
+                                                <p>5</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Instals <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span>
+                                                <p>5</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Actives <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span>
+                                                <p>3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="common_box">
+                                <div class="table_data_row">
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">License Name</span>
+                                                <h6 class="md_text">Noise Cancellation 1</h6>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">License Key</span>
+                                                <p>XYZGE23233233
+                                                    <button type="button" aria-label="Copy" class="copy_btn">
+                                                        <span class="icon"><iconify-icon
+                                                                icon="tabler:copy"></iconify-icon></span>
+                                                    </button>
+                                                </p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                                <p data-short="NC">Noise Cancellation</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Upgrade</span>
+                                                <button type="button" aria-label="Add Seats"
+                                                    class="theme_btn theme_btn_2">
+                                                    Add Seats
+                                                </button>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Actions</span>
+                                                <ul class="actions_list">
+                                                    <li class="repeat_single_btn_wp">
+                                                        <button type="button" aria-label="Repeat"
+                                                            class="repeat_single_btn"><span class="icon"><img
+                                                                    src="assets/images/repeat.svg" alt="Repeat"
+                                                                    width="16" height="15"></span></button>
+                                                    </li>
+                                                    <li class="delete_btn_wp">
+                                                        <button type="button" aria-label="Edit" class="delete_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="material-symbols:delete"></iconify-icon></span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description for_des">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Billing Period</span>
+                                                <p>Quarterly</p>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_mob">
+                                                <span class="sm_text">License Key</span>
+                                                <p>XYZGE23233233
+                                                    <button type="button" aria-label="Copy" class="copy_btn">
+                                                        <span class="icon"><iconify-icon
+                                                                icon="tabler:copy"></iconify-icon></span>
+                                                    </button>
+                                                </p>
+                                            </div>
+                                            <div class="table_data_row_col for_mob">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                                <p data-short="NC">Noise Cancellation</p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <span class="sm_text">Auto-Renewal Date</span>
+                                                <p>May 1 2024</p>
+                                            </div>
+                                            <div class="table_data_row_col for_des">
+                                                <div class="table_data_row_col_inr_flx">
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <span class="sm_text">Seats</span>
+                                                        <p>5</p>
+                                                    </div>
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <span class="sm_text">Instals <span class="icon"><iconify-icon
+                                                                    icon="mingcute:question-fill" data-toggle="tooltip"
+                                                                    data-placement="top"
+                                                                    title="Instals"></iconify-icon></span></span>
+                                                        <p>5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Total Cost<span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Total Cost"></iconify-icon></span></span>
+                                                <p>$0.00</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Cost per Seat</span>
+                                                <p>$12.00/Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr for_mob">
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Trial Expiration Date</span>
+                                                <p>May 1 2024</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Seats</span>
+                                                <p>5</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Instals <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span>
+                                                <p>5</p>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Actives <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span>
+                                                <p>5</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table_footer">
+                                <div class="table_data_row">
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description">
+                                            <div class="table_data_row_col">
+                                                <h6 class="md_text">All Seats</h6>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_des"></div>
+                                            <div class="table_data_row_col">
+                                                <div class="table_data_row_col_inr_flx">
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <p class="reg_text"><strong>15</strong></p>
+                                                    </div>
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <p class="reg_text"><strong>15</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table_data_row_col for_des"></div>
+                                            <div class="table_data_row_col">
+                                                <p class="reg_text"><strong>$36.00/Month</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description">
+                                            <div class="table_data_row_col">
+                                                <p>Accent Softening Seats</p>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_des"></div>
+                                            <div class="table_data_row_col">
+                                                <div class="table_data_row_col_inr_flx">
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <p>10</p>
+                                                    </div>
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <p>10</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table_data_row_col for_des"></div>
+                                            <div class="table_data_row_col">
+                                                <p>$60.00/Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description">
+                                            <div class="table_data_row_col">
+                                                <p>Accent Softening Seats</p>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col for_des"></div>
+                                            <div class="table_data_row_col">
+                                                <div class="table_data_row_col_inr_flx">
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <p>5</p>
+                                                    </div>
+                                                    <div class="table_data_row_col_inr_flx_col">
+                                                        <p>5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table_data_row_col for_des"></div>
+                                            <div class="table_data_row_col">
+                                                <p>$12.00/Month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard_tab_content" id="UserAccounts" style="display: none;">
+                    <div class="header_dashboard_left">
+                        <div class="header_dashboard_left_text">
+                            <h3 class="h3_title">Accounts</h3>
+                        </div>
+                        <div class="header_dashboard_left_btn">
+                            <button type="button" aria-label="Add" class="theme_btn theme_primary_btn">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table_box userAccountData">
+                        <div class="table_data">
+                            <div class="table_data_header">
+                                <div class="table_data_row">
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Account Name</span>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">License Name</span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Seats</span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Instals <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Type"></iconify-icon></span></span></span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Actives <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Type"></iconify-icon></span></span></span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Actions</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table_data_body">
+                                <div class="table_data_row">
+                                    <div class="table_data_row_inr">
+                                        <div class="table_data_row_description">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text for_mob_flex">License Name</span>
+                                                <h6 class="md_text">Default Account</h6>
+                                                <ul class="actions_list for_des">
+                                                    <li class="edit_btn_wp">
+                                                        <button type="button" aria-label="Edit" class="edit_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="material-symbols:edit"></iconify-icon></span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_description_list_inr">
+                                                <div class="table_data_row_col for_des_flex">
+                                                    <span class="sm_text">Accent Test License</span>
+                                                </div>
+                                                <div class="table_data_row_col for_des_flex">
+                                                    <span class="sm_text">AS</span>
+                                                </div>
+                                                <div class="table_data_row_col for_des_flex">
+                                                    <span class="sm_text">5</span>
+                                                </div>
+                                                <div class="table_data_row_col for_des_flex">
+                                                    <span class="sm_text">5</span>
+                                                </div>
+                                                <div class="table_data_row_col for_des_flex">
+                                                    <span class="sm_text">3</span>
+                                                </div>
+                                                <div class="table_data_row_col">
+                                                    <span class="sm_text for_mob_flex">Actions</span>
+                                                    <ul class="actions_list">
+                                                        <li class="delete_btn_wp for_des">
+                                                            <button type="button" aria-label="Edit"
+                                                                class="delete_btn"><span class="icon"><iconify-icon
+                                                                        icon="material-symbols:delete"></iconify-icon></span></button>
+                                                        </li>
+                                                        <li class="edit_btn_wp for_mob">
+                                                            <button type="button" aria-label="Edit"
+                                                                class="edit_btn"><span class="icon"><iconify-icon
+                                                                        icon="material-symbols:edit"></iconify-icon></span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="table_data_row_description_list_inr for_des_flex">
+                                                <div class="table_data_row_col">
+                                                    <span class="sm_text">Denoiser Test License</span>
+                                                </div>
+                                                <div class="table_data_row_col">
+                                                    <span class="sm_text">NC</span>
+                                                </div>
+                                                <div class="table_data_row_col">
+                                                    <span class="sm_text">5</span>
+                                                </div>
+                                                <div class="table_data_row_col">
+                                                    <span class="sm_text">5</span>
+                                                </div>
+                                                <div class="table_data_row_col">
+                                                    <span class="sm_text">4</span>
+                                                </div>
+                                                <div class="table_data_row_col">
+                                                    <ul class="actions_list">
+                                                        <li class="delete_btn_wp">
+                                                            <button type="button" aria-label="Edit"
+                                                                class="delete_btn"><span class="icon"><iconify-icon
+                                                                        icon="material-symbols:delete"></iconify-icon></span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr for_mob_flex">
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">License Name</span>
+                                                <h6 class="md_text">Accent Test License</h6>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                                <h6 class="md_text">AS</h6>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Action</span>
+                                                <ul class="actions_list">
+                                                    <li class="delete_btn_wp">
+                                                        <button type="button" aria-label="Edit" class="delete_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="material-symbols:delete"></iconify-icon></span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Seats</span><span class="seats">5</span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Instals <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span><span
+                                                    class="seats">5</span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Actives <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span><span
+                                                    class="seats">3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table_data_row_inr for_mob_flex">
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">License Name</span>
+                                                <h6 class="md_text">Denoiser Test License</h6>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Type
+                                                    <span class="icon"><iconify-icon icon="mingcute:question-fill"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Type"></iconify-icon></span></span>
+                                                <h6 class="md_text">NC</h6>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Action</span>
+                                                <ul class="actions_list">
+                                                    <li class="delete_btn_wp">
+                                                        <button type="button" aria-label="Edit" class="delete_btn"><span
+                                                                class="icon"><iconify-icon
+                                                                    icon="material-symbols:delete"></iconify-icon></span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="table_data_row_description_list">
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">Seats</span><span class="seats">5</span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Instals <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span><span
+                                                    class="seats">5</span>
+                                            </div>
+                                            <div class="table_data_row_col">
+                                                <span class="sm_text">1W Actives <span class="icon"><iconify-icon
+                                                            icon="mingcute:question-fill" data-toggle="tooltip"
+                                                            data-placement="top"
+                                                            title="Instals"></iconify-icon></span></span><span
+                                                    class="seats">4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="copyright for_mob">
+        <div class="footer_logo">
+            <a href="index.html" title="Tomoto.ai" class="custom_logo_link">
+                <img width="140" height="25" src="assets/images/site_logo.svg" alt="Tomoto.ai" />
+            </a>
+        </div>
+        <ul>
+            <li><a href="javascript:void();" title="Privacy">Privacy</a></li>
+            <li><a href="javascript:void();" title="Terms">Terms</a></li>
+            <li><a href="javascript:void();" title="Ethics">Ethics</a></li>
+            <li><a href="javascript:void();" title="Support">Support</a></li>
+        </ul>
+        <div class="copyright_bottom_text">
+            <p>&copy; Copyrights 2024. Tomato.ai</p>
+        </div>
+    </div>
+    <!-- Main Dashboard End -->
+</body>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/simplebar.js"></script>
+<script src="assets/js/iconify-icon.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</html>
