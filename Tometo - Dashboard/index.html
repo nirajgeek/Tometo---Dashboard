@@ -101,7 +101,7 @@
                         <li><a href="javascript:void();" title="Support">Support</a></li>
                     </ul>
                     <div class="copyright_bottom_text">
-                        <p>&copy; Copyrights 2024. Tomato.ai</p>
+                        <p>&copy; Copyrights 2025. Tomato.ai</p>
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div class="dashboard_content">
-                <div class="dashboard_tab_content" id="UserLicenses" style="display: block;">
+                <div class="dashboard_tab_content" id="UserLicenses" style="display: none;">
                     <div class="header_dashboard_left">
                         <div class="header_dashboard_left_text">
                             <h3 class="h3_title">Licenses</h3>
@@ -892,6 +892,130 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard_tab_content" id="UserDaily" style="display: block;">
+                    <div class="main_tabbing_wp">
+                        <form method="post">
+                            <ul>
+                                <li>
+                                    <div class="switch_btn">
+                                        <input type="radio" id="daily" name="toggle" checked>
+                                        <label for="daily" class="toggle-label">Daily</label>
+                                        <input type="radio" id="monthly" name="toggle">
+                                        <label for="monthly" class="toggle-label">Monthly</label>
+                                        <div class="toggle-slider"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_input_wp">
+                                        <div class="icon calender">
+                                            <img src="assets/images/calender.svg" alt="Calender" width="17" height="18">
+                                        </div>
+                                        <input type="date" class="form_input" name="Date">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_input_wp">
+                                        <select name="All Seat Types" class="form_input">
+                                            <option value="">All Seat Types</option>
+                                            <option value="All Seat Types">All Seat Types</option>
+                                        </select>
+                                        <div class="icon down_arrow">
+                                            <iconify-icon class="iconify" icon="teenyicons:down-solid"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_input_wp">
+                                        <select name="All Accounts" class="form_input">
+                                            <option value="">All Accounts</option>
+                                            <option value="All Accounts">All Accounts</option>
+                                        </select>
+                                        <div class="icon down_arrow">
+                                            <iconify-icon class="iconify" icon="teenyicons:down-solid"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="header_dashboard_left">
+                        <div class="header_dashboard_left_text">
+                            <h3 class="h3_title">Dashboard</h3>
+                        </div>
+                        <div class="header_dashboard_left_btn">
+                            <p><strong>All Accounts</strong></p>
+                        </div>
+                    </div>
+                    <div class="daily_dashboard_list_boxes">
+                        <div class="daily_dashboard_list_box">
+                            <div class="common_box">
+                                <div class="title_desc">
+                                    <div class="reg_text">
+                                        <p><strong>Daily Actives</strong> <span class="icon"><iconify-icon
+                                                    icon="mingcute:question-fill" data-toggle="tooltip"
+                                                    data-placement="top" title="Daily Actives"></iconify-icon></span>
+                                        </p>
+                                    </div>
+                                    <span class="sm_text">Some additional explanation</span>
+                                </div>
+                                <div class="daily_list_bottom_text">
+                                    <h4 class="daily_actives_text">50</h4>
+                                    <span class="sm_text">Seats</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="daily_dashboard_list_box">
+                            <div class="common_box">
+                                <div class="title_desc">
+                                    <div class="reg_text">
+                                        <p><strong>Daily Inactives</strong> <span class="icon"><iconify-icon
+                                                    icon="mingcute:question-fill" data-toggle="tooltip"
+                                                    data-placement="top" title="Daily Inactives"></iconify-icon></span>
+                                        </p>
+                                    </div>
+                                    <span class="sm_text">Some additional explanation</span>
+                                </div>
+                                <div class="daily_list_bottom_text">
+                                    <h4 class="daily_in_actives_text">6</h4>
+                                    <span class="sm_text">Seats</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="daily_dashboard_list_box">
+                            <div class="common_box">
+                                <div class="title_desc">
+                                    <div class="reg_text">
+                                        <p><strong>Handle Time</strong> <span class="icon"><iconify-icon
+                                                    icon="mingcute:question-fill" data-toggle="tooltip"
+                                                    data-placement="top" title="Handle Time"></iconify-icon></span></p>
+                                    </div>
+                                    <span class="sm_text">Some additional explanation</span>
+                                </div>
+                                <div class="daily_list_bottom_text">
+                                    <h4 class="daily_in_actives_text">2:34</h4>
+                                    <span class="sm_text">Minutes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="daily_dashboard_list_box">
+                            <div class="common_box">
+                                <div class="title_desc">
+                                    <div class="reg_text">
+                                        <p><strong>Total Minutes</strong> <span class="icon"><iconify-icon
+                                                    icon="mingcute:question-fill" data-toggle="tooltip"
+                                                    data-placement="top" title="Total Minutes"></iconify-icon></span>
+                                        </p>
+                                    </div>
+                                    <span class="sm_text">Some additional explanation</span>
+                                </div>
+                                <div class="daily_list_bottom_text">
+                                    <h4 class="daily_in_actives_text">2.2K</h4>
+                                    <span class="sm_text">Minutes</span>
                                 </div>
                             </div>
                         </div>

@@ -322,6 +322,7 @@ h6 {
     line-height: 1.33333333;
 }
 
+.reg_text *,
 .reg_text {
     font-size: 16px;
     line-height: 1.25;
@@ -423,6 +424,76 @@ h6 {
 }
 
 /* ======= Button CSS End ======= */
+
+/* ======= Form CSS Start ======= */
+
+.form_input_wp {
+    position: relative;
+}
+
+.down_arrow {
+    position: absolute;
+    top: 18px;
+    right: 14.5px;
+    font-size: 10.5px;
+    line-height: 1;
+}
+
+.form_input_wp .calender {
+    --size: 46px;
+    background-color: var(--theme_dark_color);
+    min-width: var(--size);
+    min-height: var(--size);
+    color: var(--theme_white_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--theme_radisu_10) 0 0 var(--theme_radisu_10);
+}
+
+.form_input_wp .icon iconify-icon {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.form_input {
+    width: 100%;
+    height: 46px;
+    border: 1px solid transparent;
+    background-color: var(--theme_grey_color5);
+    border-radius: var(--theme_radisu_10);
+    font-size: 12px;
+    font-weight: 500;
+    color: #2D2A2A;
+    padding: 0 22px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form_input_wp .calender+.form_input {
+    padding-left: 63px;
+}
+
+select:focus {
+    outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    /* Ensures the calendar still shows up */
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* ======= Form CSS End ======= */
 
 /* ======= Sidebar CSS Start ======= */
 .theme_header {
@@ -1756,6 +1827,79 @@ h6 {
 }
 
 /* ----- User Account Data CSS End ----- */
+
+/* ----- User Account Dashboard Daily Data CSS Start ----- */
+.main_tabbing_wp ul {
+    display: grid;
+    max-width: 846px;
+    grid-template-columns: auto 270px 1fr 1fr;
+    gap: 8px;
+}
+
+.switch_btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: var(--theme_dark_color);
+    border-radius: var(--theme_radisu_10);
+    width: 200px;
+    height: 46px;
+    padding: 5px;
+}
+
+.toggle-label {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--theme_white_color);
+    z-index: 2;
+    cursor: pointer;
+    transition: var(--theme_transition);
+}
+
+.switch_btn input[type="radio"] {
+    display: none;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 94px;
+    height: 34px;
+    background: var(--theme_white_color);
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+#monthly:checked~.toggle-slider {
+    transform: translateX(94px);
+}
+
+#monthly:checked+.toggle-label,
+#daily:checked+.toggle-label {
+    color: var(--theme_dark_color);
+}
+
+.header_dashboard_left_btn p {
+    font-size: 15px;
+    color: #595959;
+}
+
+#UserDaily .header_dashboard_left {
+    align-items: flex-end;
+    gap: 14px;
+    margin: 26px 0 26px;
+}
+
+.daily_dashboard_list_boxes {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ----- User Account Dashboard Daily Data CSS End ----- */
 
 /* ======= Dashboard Tab Content End ======= */
 
