@@ -281,6 +281,18 @@ strong {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../Satoshi-Regular.eot');
+    src: url('../Satoshi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Satoshi-Regular.woff2') format('woff2'),
+        url('../Satoshi-Regular.woff') format('woff'),
+        url('../Satoshi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     font-size: 14px;
     line-height: 1.42857;
@@ -1897,6 +1909,64 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: grid;
     gap: 14px;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.daily_dashboard_list_box .title_desc .reg_text p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.daily_dashboard_list_box .title_desc .reg_text p .icon {
+    width: 1em;
+    height: 1em;
+    font-size: 12px;
+    display: inline-block;
+    color: var(--theme_grey_color3);
+}
+
+.daily_dashboard_list_box .title_desc .reg_text p .icon iconify-icon {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+    font-size: inherit;
+}
+
+.daily_dashboard_list_box .title_desc .sm_text {
+    font-weight: 400;
+    color: #595959;
+}
+
+.daily_dashboard_list_box .daily_list_bottom_text {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.daily_dashboard_list_box .daily_list_bottom_text h4 {
+    font-size: 38px;
+    line-height: 1.315789;
+    margin-bottom: 0;
+}
+
+.daily_dashboard_list_box .daily_list_bottom_text .daily_actives_text {
+    color: var(--theme_green_color);
+}
+
+.daily_dashboard_list_box .daily_list_bottom_text .daily_in_actives_text {
+    color: var(--theme_red_color);
+}
+
+.daily_dashboard_list_box .daily_list_bottom_text .sm_text {
+    padding-bottom: 8px;
+}
+
+.daily_dashboard_list_box .title_desc {
+    margin-bottom: 14px;
+}
+
+.daily_dashboard_list_box .common_box {
+    padding: 21px 33px 25px;
 }
 
 /* ----- User Account Dashboard Daily Data CSS End ----- */
