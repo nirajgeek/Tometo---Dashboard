@@ -1909,6 +1909,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: grid;
     gap: 14px;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 14px;
 }
 
 .daily_dashboard_list_box .title_desc .reg_text p {
@@ -1967,6 +1968,62 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .daily_dashboard_list_box .common_box {
     padding: 21px 33px 25px;
+}
+
+.daily_seats_box_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daily_seats_box_head .daily_seats_box_head_title .reg_text p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.daily_seats_box_head .daily_seats_box_head_title .reg_text p .icon {
+    width: 1em;
+    height: 1em;
+    font-size: 12px;
+    display: inline-block;
+    color: var(--theme_grey_color3);
+}
+
+.daily_seats_box_head .daily_seats_box_head_title .sm_text {
+    font-size: 10px;
+    font-weight: 400;
+    color: #595959;
+}
+
+.daily_seats_box_head_active_list ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.daily_seats_box_head_active_list ul>li {
+    font-size: 12px;
+    line-height: 1.666666;
+}
+
+.daily_seats_box_head_active_list ul>li.in_active_seats::before {
+    background: var(--theme_red_color);
+}
+
+.daily_seats_box_head_active_list ul>li.active_seats::before {
+    background: var(--theme_green_color);
+}
+
+.daily_seats_box_head_active_list ul>li::before {
+    content: "";
+    display: inline-block;
+    --size: 8px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: var(--theme_dark_color);
+    margin-right: 12px;
 }
 
 /* ----- User Account Dashboard Daily Data CSS End ----- */

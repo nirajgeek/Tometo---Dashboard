@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/images/fevicon.png" />
     <link rel="preload" href="assets/font/Satoshi-Bold.woff2" as="font" type="font/woff2" />
     <link rel="preload" href="assets/font/Satoshi-Medium.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="assets/font/Satoshi-Regular.woff2" as="font" type="font/woff2" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Tomoto - Dashboard</title>
@@ -1020,6 +1021,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="daily_seats_box common_box">
+                        <div class="daily_seats_box_head">
+                            <div class="daily_seats_box_head_title">
+                                <div class="reg_text">
+                                    <p><strong>Daily Seats</strong> <span class="icon"><iconify-icon
+                                                icon="mingcute:question-fill" data-toggle="tooltip" data-placement="top"
+                                                title="Daily Actives"></iconify-icon></span>
+                                    </p>
+                                </div>
+                                <span class="sm_text">Some additional explanation</span>
+                            </div>
+                            <div class="daily_seats_box_head_active_list">
+                                <ul>
+                                    <li class="in_active_seats">In Actives Seats</li>
+                                    <li class="active_seats">Actives Seats</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <canvas id="dailySeatsChart"></canvas> <!-- Chart Container -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -1047,6 +1068,7 @@
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/simplebar.js"></script>
 <script src="assets/js/iconify-icon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="assets/js/custom.js"></script>
 
 </html>
